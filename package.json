@@ -1,0 +1,23 @@
+{
+  "name": "slide-learning",
+  "version": "1.0.0",
+  "description": "reveal.jsを使ってスライドを作ってみる。\r html,css,JSの練習用\r node.js package などの概念学習\r Github(web およびdesktopツール)の使い方の学習",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Hiroki-ymt/Slide-learning.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Hiroki-ymt/Slide-learning/issues"
+  },
+  "homepage": "https://github.com/Hiroki-ymt/Slide-learning#readme",
+  "dependencies": {
+    "reveal": "^0.0.4",
+    "reveal.js": "^4.4.0"
+  }
+}
