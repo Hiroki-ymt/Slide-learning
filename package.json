@@ -19,5 +19,8 @@
   "dependencies": {
     "reveal": "^0.0.4",
     "reveal.js": "^4.4.0"
+  },
+  "devDependencies": {
+    "gulp": "^4.0.2"
   }
 }

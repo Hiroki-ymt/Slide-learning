@@ -20,17 +20,34 @@
     <body>
         <div class="reveal">
             <div class="slides">  
-                 <section>スライド１</section>
-                 <section>スライド２</section>
+                <section data-markdown="md/00-opening.md"></section>
+                <section>スライド２</section>
             </div>
         </div>
 
         <!--
         JSをmain.jsから読み込む場合
-        
-
         <script type="module" src="./src/main.js"></script>
+         -->
+        <!-- ES module 直打ち
+        
+        <script>
+            import Reveal from      "../node_modules/reveal.js/dist/reveal.esm.js";
+            import Markdown from    "../node_modules/reveal.js/plugin/markdown/markdown.esm.js";
+            import Notes from       "../node_modules/reveal.js/plugin/notes/notes.esm.js";
+            import Highlight from   "../node_modules/reveal.js/plugin/highlight/highlight.esm.js";
+
+            import "./main.css";
+
+            const deck = new Reveal({
+            plugins: [ Markdown, Highlight, Notes ],
+            history: true
+            });
+            deck.initialize();
+
+        </script>
         -->
+
 
         <!--
         JSをhtml内で記述する場合
@@ -45,6 +62,6 @@
                 plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
             });
 	    </script>
-        
+ 
     </body>
 </html>
